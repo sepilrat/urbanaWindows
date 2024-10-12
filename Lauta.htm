@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ventanas de aluminio de alta calidad, diseño moderno y durabilidad.">
+    <title>Urbana Windows - Ventanas de Aluminio Premium</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 120px;
+            max-height: 60px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold; /* Añadido para diferenciar */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Cambiado a center para alinear al centro */
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero img {
+            max-width: 45%;
+            border-radius: 10px;
+        }
+
+        .hero-content {
+            max-width: 45%;
+            text-align: center; /* Alinear texto al centro */
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between; /* Cambiado a space-between para ocupar el 100% */
+            margin: 40px 0;
+            flex-wrap: wrap;
+            padding: 0; /* Eliminado padding */
+        }
+
+        .feature {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%; /* Ajustado para permitir 3 contenedores alineados */
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Sección de galería */
+        .gallery {
+            margin: 0; /* Eliminado espacio superior */
+            padding: 0; /* Ajustado para quitar el padding */
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #007BFF;
+        }
+
+        .gallery-grid {
+            display: flex; /* Cambiado a flex para alinear al centro */
+            justify-content: space-between; /* Alinear al 100% */
+            flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+            width: 100%; /* Asegurarse de ocupar el 100% */
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 250px;
+            flex: 1; /* Para permitir que los elementos crezcan proporcionalmente */
+            min-width: 300px; /* Mantener un ancho mínimo */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Animación al desplazarse */
+        .animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .animate.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpeg" alt="Logo Urbana Windows">
+        <h1>Urbana Windows</h1>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-content">
+            <h2>Diseño, Durabilidad y Estilo</h2>
+            <p>Ofrecemos ventanas de aluminio de la más alta calidad, diseñadas para brindar una excelente estética, aislamiento térmico y durabilidad. Ideales para hogares, oficinas y proyectos comerciales.</p>
+            <a href="#contact" class="cta-button">Solicita tu Presupuesto</a>
+        </div>
+        <img src="imagen1.jpeg" alt="Ventanas de aluminio">
+    </section>
+
+    <section class="features container">
+        <div class="feature">
+            <h3>Alta Resistencia</h3>
+            <p>Nuestras ventanas están fabricadas con materiales de alta calidad, garantizando resistencia y durabilidad en todas las condiciones climáticas.</p>
+        </div>
+        <div class="feature">
+            <h3>Diseño Moderno</h3>
+            <p>Disponemos de una amplia gama de diseños modernos que se adaptan a cualquier estilo arquitectónico, manteniendo la elegancia en cada detalle.</p>
+        </div>
+        <div class="feature">
+            <h3>Aislamiento Térmico</h3>
+            <p>Nuestras ventanas de aluminio cuentan con sistemas avanzados de aislamiento térmico que ayudan a reducir los costos de energía en tu hogar o negocio.</p>
+        </div>
+    </section>
+
+    <!-- Galería de imágenes con animación -->
+    <section class="gallery container">
+        <h2>Galería de Proyectos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item animate"><img src="proyecto1.jpeg" alt="Proyecto 1"></div>
+            <div class="gallery-item animate"><img src="proyecto2.jpeg" alt="Proyecto 2"></div>
+            <div class="gallery-item animate"><img src="proyecto3.jpeg" alt="Proyecto 3"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Urbana Windows. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Detectar el scroll para activar la animación
+        const animatedItems = document.querySelectorAll('.animate');
+        function showOnScroll() {
+            const scrollY = window.pageYOffset;
+            animatedItems.forEach(item => {
+                const itemTop = item.offsetTop - window.innerHeight + 100;
+                if (scrollY > itemTop) {
+                    item.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showOnScroll);
+        showOnScroll();
+    </script>
+    
+</body>
+</html>
