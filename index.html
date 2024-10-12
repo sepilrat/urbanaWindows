@@ -6,7 +6,8 @@
     <meta name="description" content="Ventanas de aluminio de alta calidad, diseño moderno y durabilidad.">
     <title>Urbana Windows - Ventanas de Aluminio Premium</title>
     <style>
-        body {
+
+body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -15,12 +16,17 @@
         }
 
         header {
-            background-color: #007BFF;
+            background-color: #021a35; 
             color: white;
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
         }
 
         header img {
@@ -31,9 +37,49 @@
         header h1 {
             margin: 0;
             font-size: 2rem;
-            font-weight: bold; /* Añadido para diferenciar */
+            font-weight: bold;
+            color: beige;
         }
 
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Hace que el hero ocupe toda la pantalla */
+            background-image: url(proyecto1.jpeg); /* Imagen de fondo */
+            background-size:auto;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content {
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+            
+        
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #021a35;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+       
         .container {
             width: 90%;
             max-width: 1200px;
@@ -50,6 +96,9 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
+            background-position: center;
+            background-size: cover;
         }
 
         .hero img {
@@ -65,7 +114,7 @@
         .hero h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #007BFF;
+            color: beige;
         }
 
         .hero p {
@@ -75,7 +124,7 @@
         }
 
         .cta-button {
-            background-color: #007BFF;
+            background-color: #021a35;
             color: white;
             padding: 12px 25px;
             border: none;
@@ -109,7 +158,7 @@
         }
 
         .feature h3 {
-            color: #007BFF;
+            color: #021a35;
             margin-bottom: 15px;
         }
 
@@ -128,7 +177,7 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 30px;
-            color: #007BFF;
+            color: #021a35;
         }
 
         .gallery-grid {
@@ -177,11 +226,27 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
+            width: 100%;
         }
 
         footer p {
             margin: 0;
             font-size: 1rem;
+        }
+
+         /* Media Queries for larger screens */
+         @media (min-width: 768px) {
+            .hero {
+                background-size: contain; /* Adjust for larger screens */
+                background-position: top center; /* Align from top */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero {
+                background-size:contain; /* Revert to cover for very large screens */
+               
+            }
         }
     </style>
 </head>
@@ -189,17 +254,28 @@
 
     <header>
         <img src="logo.jpeg" alt="Logo Urbana Windows">
-        <h1>Urbana Windows</h1>
+        <!-- <div> <h1>UrbanaWindows </h1>
+        <h4>Carpintería metálica.</h4></div> -->
+       
     </header>
-
-    <section class="hero container">
+    <section class="hero">
+        <div class="hero-content">
+            <h2> Diseño, Durabilidad y Estilo</h2>
+            <p>UrbanaWindows en todos tus proyectos</p>
+           
+        </div>
+        <div><a href="https://wa.me/1150958090" target="_blank" class="cta-button">Solicita tu Presupuesto <img src="whatsapp.png" width="10%"></a></div>
+    </section>
+</section>
+     <!-- <section class="hero container">
         <div class="hero-content">
             <h2>Diseño, Durabilidad y Estilo</h2>
             <p>Ofrecemos ventanas de aluminio de la más alta calidad, diseñadas para brindar una excelente estética, aislamiento térmico y durabilidad. Ideales para hogares, oficinas y proyectos comerciales.</p>
-            <a href="https://wa.me/1150958090" target="_blank" class="cta-button">Solicita tu Presupuesto <img src="whatsapp.png" width="10%"></a>
+            <img src="imagen1.jpeg" alt="Ventanas de aluminio">
         </div>
-        <img src="imagen1.jpeg" alt="Ventanas de aluminio">
-    </section>
+        
+        <div><a href="https://wa.me/1150958090" target="_blank" class="cta-button">Solicita tu Presupuesto <img src="whatsapp.png" width="10%"></a></div>
+    </section> -->
 
     <section class="features container">
         <div class="feature">
